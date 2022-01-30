@@ -14,7 +14,7 @@ import MainBar from './Comp/MainContainer';
 const useStyles = makeStyles({
   root:{
     minHeight: '100vh',
-    backgroundImage: 'url(/Assets/pattern.png)',
+    backgroundImage: 'url(../Assets/pattern.png)',
     backgroundRepeat: 'repeat',
     backgroundSize: 'contain',
     display: 'flex',
