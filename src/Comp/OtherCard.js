@@ -40,7 +40,7 @@ export default function OtherCard() {
       </Typography>
       </div>
       <div className={classes.imag}>
-        <img src='/Assets/remote2.png' className={classes.imag}/>
+        <img src='/Assets/remote2.png' alt='nullAlt' className={classes.imag}/>
       </div>
   </div>
   
