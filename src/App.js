@@ -11,10 +11,12 @@ import WebFooter from './Comp/WebFooter';
 import OtherCard from './Comp/OtherCard';
 import MainBar from './Comp/MainContainer';
 
+import pattern from './Comp/Assets/pattern.png'
+
 const useStyles = makeStyles({
   root:{
     minHeight: '100vh',
-    backgroundImage: 'url(../Assets/pattern.png)',
+    backgroundImage: `url(${pattern})`,
     backgroundRepeat: 'repeat',
     backgroundSize: 'contain',
     display: 'flex',

@@ -10,6 +10,8 @@ import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 
 import { Suspense } from 'react';
 
+import  gucci  from './Assets/gucci.gltf'
+
 
 const useStyles = makeStyles({
     root:{
@@ -27,7 +29,7 @@ const useStyles = makeStyles({
 })
 
 function GuczModel() {
-    const Model = useLoader(GLTFLoader, 'Assets/gucci.gltf');
+    const Model = useLoader(GLTFLoader, gucci);
     return (
     <>
         <primitive object={Model.scene}/>

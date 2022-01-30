@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { makeStyles, Typography } from '@material-ui/core';
+import remote2 from './Assets/remote2.png'
 
 const useStyles = makeStyles({
     mainRoot:{
@@ -40,7 +41,7 @@ export default function OtherCard() {
       </Typography>
       </div>
       <div className={classes.imag}>
-        <img src='/Assets/remote2.png' alt='nullAlt' className={classes.imag}/>
+        <img src={remote2} alt='nullAlt' className={classes.imag}/>
       </div>
   </div>
   
