@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
 
+import { ThemeProvider } from '@material-ui/core/styles';
+import { theme } from './Comp/theme';
+import { makeStyles } from '@material-ui/core';
+
+//components
+import Header from './Comp/Header';
+import Card from './Comp/Card';
+import WebFooter from './Comp/WebFooter';
+import OtherCard from './Comp/OtherCard';
+import MainBar from './Comp/MainContainer';
+
+const useStyles = makeStyles({
+  root:{
+    minHeight: '100vh',
+    backgroundImage: 'url(/Assets/pattern.png)',
+    backgroundRepeat: 'repeat',
+    backgroundSize: 'contain',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+})
+
 function App() {
+  const classes=useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.root}>
+      <ThemeProvider theme={theme}>
+        <Header/>
+        <Card/>
+        <MainBar/>
+          <OtherCard/>
+        <WebFooter/>
+      </ThemeProvider>
     </div>
   );
 }
