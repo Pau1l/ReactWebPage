@@ -11,7 +11,7 @@ import WebFooter from './Comp/WebFooter';
 import OtherCard from './Comp/OtherCard';
 import MainBar from './Comp/MainContainer';
 
-import pattern from './Comp/Assets/pattern.png'
+import pattern from '../src/Comp/Assets/pattern.png'
 
 const useStyles = makeStyles({
   root:{

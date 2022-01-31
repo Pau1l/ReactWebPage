@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { makeStyles, Typography } from '@material-ui/core';
-import remote2 from './Assets/remote2.png'
+import remote2 from '../Comp/Assets/remote2.png'
 
 const useStyles = makeStyles({
     mainRoot:{
