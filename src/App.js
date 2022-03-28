@@ -6,12 +6,11 @@ import { makeStyles } from '@material-ui/core';
 
 //components
 import Header from './Comp/Header';
-import Card from './Comp/Card';
 import WebFooter from './Comp/WebFooter';
 import OtherCard from './Comp/OtherCard';
 import MainBar from './Comp/MainContainer';
 
-import pattern from '../src/Comp/Assets/pattern.png'
+import pattern from './Assets/pattern.png'
 
 const useStyles = makeStyles({
   root:{
@@ -32,9 +31,8 @@ function App() {
     <div className={classes.root}>
       <ThemeProvider theme={theme}>
         <Header/>
-        <Card/>
         <MainBar/>
-          <OtherCard/>
+        <OtherCard/>
         <WebFooter/>
       </ThemeProvider>
     </div>
