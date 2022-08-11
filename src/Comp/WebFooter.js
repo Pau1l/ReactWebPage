@@ -5,7 +5,7 @@ import { makeStyles, AppBar, Toolbar, Typography} from '@material-ui/core';
 const useStyles = makeStyles({
     Appbar:{
         position: 'static',
-        backgroundColor: 'rgba(225, 179, 182, 1)',
+        backgroundColor: 'rgba(27,27,27, 0.95)',
         display: 'flex',
         justifyContent: 'center',
         allignItems: 'center',
@@ -14,6 +14,7 @@ const useStyles = makeStyles({
         width: '100%',
         height: '300px',
         bottom: 0,
+        color: '#CBA135',
     },
     AppbarWrapper:{
         margin: '0 auto',
@@ -23,12 +24,15 @@ const useStyles = makeStyles({
 export default function WebFooter() {
     const classes = useStyles();
   return (
-  <AppBar className={classes.Appbar}>
+  <footer className={classes.Appbar}>
         <Toolbar className={classes.AppbarWrapper}>
           <Typography>
-            Footer
+          Bow wow wow ipsizzle bling bling its fo rizzle amizzle, consectetuer adipiscing go to hizzle. 
+          Nullam sapizzle velizzle, mah nizzle volutpat, fo shizzle my nizzle yo mamma, gravida vizzle, check it out. 
+          Dang shiz phat. Tellivizzle erizzle. Shizznit izzle dolor dapibizzle turpis tempizzle dang. Fo shizzle for sure izzle izzle turpizzle. 
+          izzle pimpin'. 
           </Typography>
         </Toolbar>
-  </AppBar>
+  </footer>
   )
 }

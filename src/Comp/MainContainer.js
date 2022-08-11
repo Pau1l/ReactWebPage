@@ -1,11 +1,11 @@
 import React from 'react';
-
+import Card from './Card';
 import { makeStyles, AppBar, Toolbar} from '@material-ui/core';
 
 const useStyles = makeStyles({
     MainBar:{
         position: 'static',
-        background: 'linear-gradient(45deg, rgba(201, 63, 46, 0.2) 30%, rgba(225, 179, 182, 0.5) 90%)',
+        background: 'linear-gradient(45deg, rgba(27, 27, 27, 0.2) 30%, rgba(27,27,27, 0.5) 90%)',
         display: 'flex',
         justifyContent: 'center',
         allignItems: 'center',
@@ -17,16 +17,18 @@ const useStyles = makeStyles({
     },
     AppbarWrapper:{
         margin: '0 auto',
+        height: '100%',
+        width: '100%',
     },
 })
 
 export default function MainBar() {
     const classes = useStyles();
   return (
-  <AppBar className={classes.MainBar}>
+  <article className={classes.MainBar}>
         <Toolbar className={classes.AppbarWrapper}>
-
+        <Card/>
         </Toolbar>
-  </AppBar>
+  </article>
   )
 }
