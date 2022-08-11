@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import { makeStyles, AppBar} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
     MainBar:{
