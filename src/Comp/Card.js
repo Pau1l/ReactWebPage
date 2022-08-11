@@ -42,7 +42,7 @@ export default function Card() {
   <div className={classes.root} id="canvas-container">
     <Canvas style={{height:'100%',width:'100%'}}>
     <Suspense fallback={null}>
-        <ambientLight intensity={1} />
+        <ambientLight intensity={2} />
         <directionalLight color='#CBA135' position={[0, 0, 5]} />
         <OrbitControls
         enableZoom={false}
@@ -51,7 +51,7 @@ export default function Card() {
         autoRotateSpeed={10}
         />
         <PerspectiveCamera
-        makeDefault fov={60}
+        makeDefault fov={20}
          position={[0, 0, 10]}>
         <spotLight position={[10, 10, 15]} angle={0.15} penumbra={1} intensity={1.5} castShadow shadow-mapSize={[2048, 2048]} />
         </PerspectiveCamera>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import { makeStyles, AppBar, Toolbar} from '@material-ui/core';
+import { makeStyles, AppBar} from '@material-ui/core';
 
 const useStyles = makeStyles({
     MainBar:{
@@ -26,9 +26,9 @@ export default function MainBar() {
     const classes = useStyles();
   return (
   <article className={classes.MainBar}>
-        <Toolbar className={classes.AppbarWrapper}>
+        <div className={classes.AppbarWrapper}>
         <Card/>
-        </Toolbar>
+        </div>
   </article>
   )
 }
