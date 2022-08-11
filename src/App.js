@@ -14,7 +14,7 @@ import pattern from './Assets/pattern.png'
 
 const useStyles = makeStyles({
   root:{
-    minHeight: '100vh',
+    height: '100vh',
     backgroundImage: `url(${pattern})`,
     backgroundRepeat: 'repeat',
     backgroundSize: 'contain',
